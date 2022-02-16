@@ -115,6 +115,9 @@ private:
 		}
 
 		jstring new_str = env->NewStringUTF("Xiaomi");
+		jstring new_str2 = env->NewStringUTF("venus");
+		jstring new_str3 = env->NewStringUTF("M2011K2C");
+		jstring new_str4 = env->NewStringUTF("Xiaomi Mi 11 China (11):Xiaomi:M2011K2C=Xiaomi/venus/venus:11/RKQ1.200928.002/V12.0.22.0.RKBCNXM:user/release-keys__2021-01-01"); 
 
 		jfieldID brand_id = env->GetStaticFieldID(build_class, "BRAND", "Ljava/lang/String;");
 		if (brand_id != nullptr) {
@@ -131,12 +134,36 @@ private:
 			env->SetStaticObjectField(build_class, product_id, new_str);
 		}
 
+		jfieldID device_id = env->GetStaticFieldID(build_class, "DEVICE", "Ljava/lang/String;");
+		if (product_id != nullptr) {
+			env->SetStaticObjectField(build_class, device_id, new_str2);
+		}
+
+		jfieldID hardware_id = env->GetStaticFieldID(build_class, "HARDWARE", "Ljava/lang/String;");
+		if (product_id != nullptr) {
+			env->SetStaticObjectField(build_class, hardware_id, new_str2);
+		}
+
+		jfieldID model_id = env->GetStaticFieldID(build_class, "MODEL", "Ljava/lang/String;");
+		if (product_id != nullptr) {
+			env->SetStaticObjectField(build_class, model_id, new_str3);
+		}
+
+		jfieldID fingerprint_id = env->GetStaticFieldID(build_class, "FINGERPRINT", "Ljava/lang/String;");
+		if (product_id != nullptr) {
+			env->SetStaticObjectField(build_class, fingerprint_id, new_str4);
+		}
+
+
 		if(env->ExceptionCheck())
 		{
 			env->ExceptionClear();
 		}
 
 		env->DeleteLocalRef(new_str);
+		env->DeleteLocalRef(new_str2);
+		env->DeleteLocalRef(new_str3);
+		env->DeleteLocalRef(new_str4);
 	}
 
 };

@@ -34,8 +34,7 @@ thread_local callback_func *saved_callback = nullptr;
 
 static void my_callback(void *cookie, const char *name, const char *value, uint32_t serial) {
     if (!saved_callback) return;
-
-    auto prop = Config::Properties::Find(name);
+	auto prop = Config::Properties::Find(name);
     if (!prop) {
         saved_callback(cookie, name, value, serial);
         return;
