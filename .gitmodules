@@ -1,3 +1,9 @@
 [submodule "libcxx"]
 	path = module/jni/libcxx
 	url = https://github.com/topjohnwu/libcxx.git
+[submodule "xhook"]
+	path = module/jni/external/xhook
+	url = https://github.com/iqiyi/xHook.git
+[submodule "module/jni/external/xhook"]
+	path = module/jni/external/xhook
+	url = https://github.com/iqiyi/xHook.git
