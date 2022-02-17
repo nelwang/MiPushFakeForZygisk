@@ -63,10 +63,14 @@ void Config::Load() {
 	Properties::Put("ro.product.manufacturer", "Xiaomi");
 	Properties::Put("ro.product.brand", "Xiaomi");
 	Properties::Put("ro.product.name", "Xiaomi");
-	Properties::Put("ro.product.device", "venus");
-	Properties::Put("ro.hardware", "venus");
-	Properties::Put("ro.product.model", "M2011K2C");
-	Properties::Put("ro.build.fingerprint", "Xiaomi Mi 11 China (11):Xiaomi:M2011K2C=Xiaomi/venus/venus:11/RKQ1.200928.002/V12.0.22.0.RKBCNXM:user/release-keys__2021-01-01");
+	Properties::Put("ro.product.device", "zeus");
+	Properties::Put("ro.hardware", "zeus");
+	Properties::Put("ro.product.model", "2201122C");
+	Properties::Put("ro.build.fingerprint", "Xiaomi/zeus/zeus:12/SKQ1.211006.001/V13.0.21.0.SLBCNXM:user/release-keys");
+
+	Properties::Put("ro.build.id", "SKQ1.211006.001");
+	Properties::Put("ro.build.version.incremental", "V13.0.21.0.SLBCNXM");
+	Properties::Put("ro.build.display.id", "SKQ1.211006.001 test-keys");
 
 	Packages::Add("com.taobao.taobao");
 	Packages::Add("com.tencent.weread");
