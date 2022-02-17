@@ -89,5 +89,7 @@ void Config::Load() {
 	Packages::Add("com.wudaokou.hippo");
 	Packages::Add("com.sf.activity");
 	Packages::Add("cn.com.hkgt.gasapp");
+	Packages::Add("com.heytap.health");
+	Packages::Add("com.alicloud.databox");
 }
 
