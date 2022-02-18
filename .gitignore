@@ -8,3 +8,8 @@
 .externalNativeBuild
 .cxx
 local.properties
+
+*.zip
+magisk/zygisk
+*.dex
+*.swp
