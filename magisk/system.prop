@@ -1,2 +1,8 @@
 # Basic MagiskHide properties
 
+#MIUI
+ro.miui.ui.version.name=V12
+ro.miui.ui.version.code=10
+ro.miui.version.code_time=1592409600
+ro.miui.internal.storage=/sdcard/
+

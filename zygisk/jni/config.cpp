@@ -63,14 +63,6 @@ void Config::Load() {
 	Properties::Put("ro.product.manufacturer", "Xiaomi");
 	Properties::Put("ro.product.brand", "Xiaomi");
 	Properties::Put("ro.product.name", "Xiaomi");
-	Properties::Put("ro.product.device", "zeus");
-	Properties::Put("ro.hardware", "zeus");
-	Properties::Put("ro.product.model", "2201122C");
-	Properties::Put("ro.build.fingerprint", "Xiaomi/zeus/zeus:12/SKQ1.211006.001/V13.0.21.0.SLBCNXM:user/release-keys");
-
-	Properties::Put("ro.build.id", "SKQ1.211006.001");
-	Properties::Put("ro.build.version.incremental", "V13.0.21.0.SLBCNXM");
-	Properties::Put("ro.build.display.id", "SKQ1.211006.001 test-keys");
 
 	Packages::Add("com.taobao.taobao");
 	Packages::Add("com.tencent.weread");

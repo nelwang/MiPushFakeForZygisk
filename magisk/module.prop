@@ -1,6 +1,6 @@
 id=mipushfake
 name=MiPushFake for Zygisk
-version=v0.20
+version=v0.24
 versionCode=20201
 author=skyrmoin
 description=MiPushFake for Zygisk
