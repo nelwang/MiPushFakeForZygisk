@@ -83,5 +83,16 @@ void Config::Load() {
 	Packages::Add("cn.com.hkgt.gasapp");
 	Packages::Add("com.heytap.health");
 	Packages::Add("com.alicloud.databox");
+
+	Packages::Add("com.tencent.androidqqmail");
+	Packages::Add("info.muge.appshare");
+	Packages::Add("com.chinamworld.main");
+	Packages::Add("com.android.calendar");
+	Packages::Add("com.miui.weather2");
+	Packages::Add("com.android.email");
+	Packages::Add("com.chaoxing.mobile");
+	Packages::Add("com.chaoxing.mobile");
+	Packages::Add("com.tencent.wemeet.app");
+	Packages::Add("com.tencent.mobileqq");
 }
 
