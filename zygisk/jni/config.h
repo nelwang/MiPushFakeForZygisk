@@ -1,6 +1,7 @@
 #pragma once
 
 #include <string>
+#include <vector>
 
 namespace Config {
 
@@ -12,7 +13,7 @@ namespace Config {
         Property(const char *name, const char *value) : name(name), value(value) {}
     };
 
-    void Load();
+    void Load(std::vector<char> config);
 
     namespace Properties {
 
